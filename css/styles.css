@@ -1,0 +1,436 @@
+body {
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.4rem;
+  margin: 1% auto 1% auto;
+  letter-spacing: 6px;
+  font-weight: bold;
+  font-family: 'Modern Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Modern Sans', sans-serif;
+  font-size: 3.2rem;
+  margin: 5% 0 4%;
+}
+
+h3 {
+  font-size: 1.2rem;
+  word-spacing: 1.5%;
+  letter-spacing: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: grey;
+}
+
+p {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+a {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: black;
+  font-size: 1.6rem;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #fff;
+  padding: 2% 8%;
+  width: 100%;
+  display: none;
+  text-align: left;
+}
+
+.header-link {
+  font-size: 1.1rem;
+  margin: 0 20px;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.header-link:hover {
+  color: #005555;
+}
+
+.navbar-brand{
+  width: 8%;
+}
+
+.navbar-logo{
+  width: 45%;
+  height: auto;
+}
+
+.offbar-logo{
+  width: 15%;
+}
+.navbar-toggler-icon{
+  border-radius: 100%;
+}
+
+.offcanvas-body{
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 22%;
+}
+
+.navbar-toggler{
+  border-radius: 100%;
+  border: none;
+  /* box-shadow: 0 0 20px #EEEEEE; */
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  background-color: white;
+  padding: 8%;
+  position: relative;
+  left: 80%;
+}
+
+/* Cover page */
+.top-container {
+  /* background: linear-gradient(180deg, rgba(238, 237, 235, 0.88) 0%, rgba(240, 239, 237, 0.915625) 26.56%, rgba(244, 243, 242, 0.950931) 53.12%, rgba(250, 249, 248, 0.973072) 76.56%, #FFFFFF 100%); */
+  height: 100vh;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+.top-section {
+  position: relative;
+  top: 22%;
+}
+
+.picture{
+  position: relative;
+  top: 22%;
+  display: inline-block;
+}
+
+.logo {
+  margin: auto;
+  margin-bottom: 2%;
+  width: 350px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.arrow {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  margin-top: 2%;
+  vertical-align: baseline;
+}
+
+.arrow a span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #031926;
+  border-right: 1px solid #031926;
+  transform: rotate(45deg);
+  margin: -5px;
+  animation: animate 2s infinite;
+}
+
+.arrow a span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.arrow a span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.arrow a span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+}
+
+/* About me section */
+.dp {
+  width: 95%;
+  text-align: left;
+  border-radius: 100%;
+  border: 2px #40c7a2 solid;
+  box-shadow: 2px 2px 2px black;
+}
+
+#about-me {
+  padding: 7% 10%;
+  height: 100%;
+}
+
+.desc {
+  padding: 0% 5%;
+}
+
+.link {
+  margin: 0 30px;
+}
+
+/* Education section */
+.education {
+  padding: 3% 10% 0 15%;
+}
+
+.institute {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.details {
+  text-align: left;
+  padding-left: 14%;
+}
+
+.education-row {
+  margin-top: 3%;
+}
+
+/* Experience section */
+#experience {
+  margin: 10% 0;
+  height: 100%;
+}
+
+#experience-carousel {
+  margin: 6% 4%;
+  height: 500px;
+  padding: 0% 20%;
+}
+
+.here-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.daa-logo {
+  width: 16%;
+  margin-bottom: 3%;
+}
+
+.srmpedia-logo {
+  width: 18%;
+  margin-bottom: 3%;
+}
+
+.aaruush-logo {
+  width: 32%;
+  margin-bottom: 3%;
+}
+
+.green-vitality-logo {
+  width: 32%;
+  margin-bottom: 3%;
+}
+
+.experience-body{
+  margin: 4% 0;
+}
+
+/* Skills section */
+#skills {
+  padding: 0 10%;
+  text-align: center;
+}
+
+.skills-row {
+  margin: 5% 0;
+}
+
+.card {
+  width: 70%;
+  height: 8rem;
+  margin: 3% auto;
+  vertical-align: middle;
+  border-color: #533483;
+  border-width: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: -8px 5px 8px gray;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.card:hover {
+  top: -20px;
+}
+
+.card-title {
+  position: relative;
+  top: 35%;
+}
+
+/* Contact section */
+#contact {
+  padding: 4% 10%;
+}
+
+.form-control:hover {
+  border-color: #277BC0;
+}
+
+.btn {
+  width: 20%;
+}
+
+.btn:hover {
+  background-color: #277BC0;
+}
+
+.mb-3 {
+  padding-bottom: 2%;
+}
+
+.copyright {
+  margin: 2%;
+}
+
+@media(max-width: 988px) {
+
+  .logo {
+    width: 220px;
+    margin-bottom: 8%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    margin: 20% auto;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #experience-carousel{
+    margin: 6% 0;
+    padding: 0;
+  }
+  .experience-body{
+    padding: 0 10%;
+    margin: 10% 0;
+  }
+  .navbar-logo{
+    width: 100%;
+  }
+}
+
+.container-hexa{
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.row-hexa{
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+.row-hexa:nth-child(even){
+  margin-left: 2px;
+}
+
+.hexagon{
+  width: 100px;
+  height: 110px;
+  margin: 2px;
+  background-color: #fff;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: animation 4s linear infinite;
+  transition: 1s;
+}
+
+.hexagon:hover{
+  background-color: #00FFD1;
+  transition: 0s;
+}
+
+@keyframes animation {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  /* 50%{
+    filter: hue-rotate(180deg);
+  } */
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.hexagon:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  background-color: #fff;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(243, 243, 243, 0.3);
+  z-index: 2;
+}
